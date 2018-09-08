@@ -3,5 +3,7 @@
 
 class LRUCache {
 public:
+  LRUCache();
+  virtual ~LRUCache();
 
 };
