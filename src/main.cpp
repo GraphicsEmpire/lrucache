@@ -15,11 +15,11 @@ protected:
     }
 };
 
-typedef LRUCache< int, int, PowerTwoRegisterPolicy> LRUCacheP2; 
+typedef LRUCache< 4, int, int, PowerTwoRegisterPolicy> LRUCacheP2; 
 
 int main(int argc, char* argv[]) {
 
-    LRUCacheP2 cache(4);
+    LRUCacheP2 cache;
     int r, cost = 0;
     
     for(int i=0; i < 100000; i++) {
